@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Mono&display=swap");
+:root {
+    --bg-color: #eaedef;
+    --text-color: #595a5b;
+    --hover-text-color: #404142;
+    --h3-color: #404344;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+.container {
+    height: 100%;
+}
+.facial-rec img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 50px;
+    opacity: 0.8;
+    height: 500px;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    /* background: var(--bg-color); */
+    /* margin-top: 40px; */
+    border-radius: 10px 10px 0 0;
+    /* min-height: 800px; */
+}
+
+nav {
+    border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* background: #cfcfd1; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+
+nav ul li {
+    width: 80px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav ul li a:hover {
+    color: var(--hover-text-color);
+    text-decoration: underline;
+}
+.active {
+    color: var(--hover-text-color);
+    text-decoration: underline;
+}
+
+.search {
+    border: 0;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: 0;
+    padding: 8px 10px;
+    background: #eff2f4;
+    color: rgb(0, 43, 54);
+}
+.search:focus {
+    /* background: #fff; */
+    color: #07161f;
+}
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* align-items: center;  */
+}
+.right,
+.left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 5px;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.left {
+    margin: 40px 20px 0 40px;
+}
+.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.right img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+h3 {
+    color: var(--h3-color);
+    font-size: 25px;
+}
+
+.title {
+    color: #0b192d;
+    font-family: "Roboto Mono", monospace;
+}
+
+.right p,
+.left p {
+    font-family: "Roboto Mono", monospace;
+    text-indent: 50px;
+    color: #3c3c4c;
+}
+
+.body-par {
+    -webkit-animation: fade-in-move-down 1.5s;
+    animation: fade-in-move-down 1.5s;
+    font-size: 20px;
+}
+.first {
+    -webkit-animation: fade-in-move-down 1s;
+    animation: fade-in-move-down 1s;
+}
+.second {
+    animation: fade-in-move-right 1s;
+}
+.third {
+    animation: fade-in-move-right 1s;
+}
+
+.first-img {
+    animation: fade-in-move-left 1s;
+}
+.second-img {
+    animation: fade-in-move-down 1s;
+}
+.third-img {
+}
+.top {
+    margin-right: 150px;
+}
+.read-more {
+    background-color: #142c3a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+}
+.read-more:hover {
+    background: #21475e;
+    text-decoration: underline;
+}
+
+footer {
+    /* position:absolute;
+  bottom: 0;
+  max-width: 1200px;
+  height: auto; */
+    margin-top: 10px;
+    background: red;
+    border-radius: 0 0 10px 10px;
+}
+
+@keyframes fade-in-move-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-3rem);
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-move-right {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+        transform: translateX(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-move-left {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
