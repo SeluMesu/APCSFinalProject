@@ -1,2 +1,2 @@
 # APCSFinalProject
- Great repository names are short and memorable. Need inspiration? How about miniature-garbanzo? 
+THis is a project that I made in high school for AP Class.
